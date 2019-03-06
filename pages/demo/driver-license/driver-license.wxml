@@ -1,0 +1,27 @@
+<import src="../template.wxml"></import>
+<ImageBox src="{{imageSrc}}"></ImageBox>
+<template is="result" data="{{...str}}"></template>
+<view class="demo-main-container" wx:if="{{str.invalid===false}}">
+    <view class="demo-result-content">
+        <view class="main-box" wx:if="{{main}}">
+            <view class="category">
+                <view class="name">| 正本</view>
+            </view>
+            <view class="demo-row" wx:for="{{main_items}}" wx:key="property">
+                <view class="demo-row-name">{{item[0]}}</view>
+                <view class="demo-row-text">{{main[ item[1] ]}}</view>
+            </view>
+        </view>
+        <view class="second-box" wx:if="{{second}}">
+            <view class="category">
+                <view class="name">| 副本</view>
+            </view>
+            <view class="demo-row" wx:for="{{second_items}}" wx:key="property">
+                <view class="demo-row-name">{{item[0]}}</view>
+                <view class="demo-row-text">{{second[ item[1] ]}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<template is="footer" data="{{...feedback}}"></template>
+<Upload bind:upload="choose" text="上传驾驶证照片"></Upload>

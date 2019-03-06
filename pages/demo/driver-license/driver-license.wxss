@@ -1,0 +1,21 @@
+@import "../bank-card/bank-card.wxss";
+
+.main-box {
+    padding-bottom: 20rpx;
+    background-color: #F5F7FB;
+}
+
+.category {
+    background-color: white;
+    border-bottom: 1rpx solid #eeeeee;
+    padding-left: 55rpx;
+    line-height: 88rpx;
+    vertical-align: middle;
+}
+
+.name {
+    font-family: PingFangSC-Medium;
+    font-size: 32rpx;
+    color: rgba(138,169,210,1);
+    padding-left: 10rpx;
+}

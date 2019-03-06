@@ -1,0 +1,9 @@
+@import "../bank-card/bank-card.wxss";
+
+.headpose {
+    height: 80rpx;
+    display: inline-block;
+    position: absolute;
+    margin-left: 20rpx;
+    transform: scale(0.8);
+}

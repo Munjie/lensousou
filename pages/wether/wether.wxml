@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<image class="bg" src="../../images/starbeach.jpg"></image>
+<canvas canvas-id="myCanvas" style="position:fixed;visibily:hidden;width: 646px; height: 966px;" />
+<view class="container">
+
+  <view class="nowWeather">
+    <view class="home_address">
+      <view>
+        <!-- <text>{{city}}{{district}}</text> -->
+      </view>
+
+    </view>
+    <view class="time">发布时间：{{update}} </view>
+    <image class="img" src="../../images/icon/{{code}}.png"></image>
+    <view class="temp">{{tmp}}° </view>
+    <view class="txt">{{txt}}</view>
+    <view class="tmpmax">{{tmp_min}}°~{{tmp_max}}°</view>
+
+  </view>
+  <view class='info'>
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{msgList}}">
+        <swiper-item>
+          <text class="swiper_item">{{item}}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+  <view>
+    <!-- <image class="shidu" src="../../images/shi.png"></image>
+      <view class="shidutxt">湿度:{{hum}}%</view>
+     <image class="qiya" src="../../images/daqiyali.png"></image>
+      <view class="qiyatxt">大气压强:{{pres}}Pa</view>
+       <image class="feng" src="../../images/fengxiang.png"></image>
+      <view class="fengtxt">{{dir}}</view> -->
+      <view class='air'>
+        <text class="airtext">{{qlty}}</text>
+        <image class="airimg" src="../../images/airqulty.png"></image>
+      </view>
+  </view>
+  <swiper-item>
+    <view class="hot-box" bindtap='rinShow'>
+      <canvas class="canvas" canvas-id="lineGraph"></canvas>
+    </view>
+  </swiper-item>
+  <view class='detail_btn'>
+    <button class='btn' bindtap='airShow'>详情</button>
+  </view>
+  <view class='photo_btn'>
+    <view class='crepicture' bindtap='onSaveImg'>
+      <image class='crepicture_img' src='../../images/crepicture.png' ></image>
+    </view>
+
+  </view>
+
+
+  <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" class='btn'>授权登录</button>
+  <view wx:else>请升级微信版本</view>
+
+</view>

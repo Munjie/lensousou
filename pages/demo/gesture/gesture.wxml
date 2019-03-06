@@ -1,0 +1,43 @@
+<import src="../template.wxml"></import>
+<view class="ges-page {{page_class}}">
+    <ImageBox bind:imageBox="imageBox" rects="{{rects}}" src="{{imageSrc}}"></ImageBox>
+    <SwiperImg bind:changeSwiper="changeSwiper" list="{{list}}"></SwiperImg>
+    <view class="demo-result-title">分析结果</view>
+    <view class="demo-main-container" wx:if="{{str.invalid===false}}">
+        <view class="demo-result-content">
+            <view class="name">{{result.name}}</view>
+            <view class="per">概率为{{result.per}}%</view>
+            <image class="ges_img" src="{{result.img}}"></image>
+        </view>
+    </view>
+    <view class="demo-main-container" wx:elif="{{str.invalid==true}}">
+        <view class="demo-result-content">
+            <view class="invalid-title">{{str.invalid_text}}</view>
+            <view bindtap="showGes" class="add">添加手势</view>
+        </view>
+    </view>
+    <view class="demo-main-container" wx:else></view>
+    <template is="footer" data="{{...feedback}}"></template>
+    <Upload bind:upload="choose" text="上传图片"></Upload>
+</view>
+<view class="add-modal-box {{page_class}}_modal_box"></view>
+<view class="modal {{page_class}}_modal">
+    <view class="top">
+        <view class="top-title">添加手势</view>
+        <image bindtap="closeGes" class="close" src="/image/gesture/close.png"></image>
+        <image class="img-ges" mode="aspectFit" src="{{imageSrc}}"></image>
+        <view class="input-box {{invalid}}" wx:if="{{status=='show'}}">
+            <input bindinput="inputChange" class="input" placeholder="请告诉我们你的手势名称" value="{{message}}"></input>
+            <button bindtap="postGes" class="btn">确定</button>
+        </view>
+        <view class="complete" wx:else>感谢你，提交完成！</view>
+    </view>
+    <view class="bottom">
+        <view class="bottom-title">可以识别的手势</view>
+        <swiper autoplay="true" class="swiper-ges" indicatorActiveColor="rgba(47,128,240,1)" indicatorColor="rgba(238,238,238,1)" indicatorDots="true">
+            <swiper-item wx:for="{{swiperList}}" wx:key="{{swiperList.id}}">
+                <image class="swiper_image" mode="aspectFit" src="{{item.image}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+</view>

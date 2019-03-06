@@ -1,0 +1,51 @@
+.headpose {
+    width: 60rpx;
+    height: 60rpx;
+    display: inline-block;
+    position: relative;
+    top: 6rpx;
+}
+
+.box {
+    top: 50%;
+    left: 50%;
+    margin: -30rpx 0 0 -30rpx;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear,-webkit-transform 0.2s linear;
+}
+
+.side {
+    background: hsla(0,0%,50%,0.7);
+    border: 2rpx solid #555;
+    height: 60rpx;
+    width: 60rpx;
+    position: absolute;
+}
+
+.front {
+    transform: translateZ(30rpx);
+    background: rgba(0,180,255,0.7);
+}
+
+.back {
+    transform: rotateX(180deg) translateZ(30rpx);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(30rpx);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(30rpx);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(30rpx);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(30rpx);
+}

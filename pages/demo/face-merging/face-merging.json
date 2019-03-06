@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "人脸融合",
+    "usingComponents": {
+        "SwiperLoad": "/component/swiperLoad/swiperLoad",
+        "ImageBox": "/component/imageBox/imageBox",
+        "Upload": "/component/upload/upload",
+        "circle": "/component/circle/circle",
+        "progress": "/component/progress/progress"
+    }
+}

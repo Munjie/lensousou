@@ -1,0 +1,29 @@
+.image-bg {
+    height: 560rpx;
+    background-color: rgba(245,247,251,1);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.mark {
+    position: absolute;
+    width: 3rpx;
+    height: 3rpx;
+    background: #50FAFF;
+}
+
+.rect {
+    border: 4rpx solid #50FAFF;
+    position: absolute;
+}

@@ -1,0 +1,76 @@
+<!--index.wxml-->
+ 
+<view class="index">
+
+  <!--<text>点击地名以更换城市</text>-->
+  <view class="thisCityName" bindtap="goSwitchCity">
+    <icon type="download" size="18" color='#2a579a' class='changeCity' />
+    <text>{{descCity}}{{district}}</text>
+  </view>
+  <view class="crepicture_view" bindtap="onSaveImg">
+    <image class='crepicture_img' src='../../images/sh.png' bindtap='onSaveImg'></image>
+  </view>
+  <view class="weatherwrap" bindtap='gotoWeather'>
+    <!--显示当天的天气信息-->
+    <view class="info">
+      <!--城市名称 当前日期-->
+      <view class="updateTime">发布时间:{{uptime}}</view>
+      <view class="tempImg_class">
+        <image class="tempImg" src="../../images/icon/{{now.cond_code}}.png"></image>
+      </view>
+      <view class="tempDesc">{{now.cond_txt}}</view>
+      <!--当天温度-->
+      <view class="temp">
+        <text class='temTxt'>{{now.tmp}}°</text>
+        <text class='tempMaxAndMin'>{{tmp_min}}°~{{tmp_max}}°</text>
+      </view>
+      <!--其他描述-->
+      <view class="weather">
+
+        <view class='airBoder'>
+          <image class="airQuality" src="../../images/widir.png"></image>{{now.wind_sc}}</view>
+        <view class='airBoder'>
+          <image class="airQuality" src="../../images/shidu.png"></image>{{now.hum}}%</view>
+        <view class='airBoder'>
+          <image class="airQuality" src="../../images/airqulty.png"></image>{{air_now_city.aqi}}{{air_now_city.qlty}}</view>
+
+      </view>
+      <view class='swiper_dec'>
+        <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+          <block wx:for="{{msgList}}">
+            <swiper-item>
+              <text class="swiper_item">{{item}}</text>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <view class='moreinfo' bindtap='airShow'>更多
+        <image class="moreinfoimg" src="../../images/moreinfo.png"></image>
+      </view>
+    </view>
+  </view>
+   <view class='moreseven' bindtap='rinShow'>查看七天
+        <image class="moresevenimg" src="../../images/moreinfo.png"></image>
+      </view>
+  <view class="container">
+    <view class="table">
+      <view class="tr" wx:for="{{jsonObject}}">
+
+        <view class="td">{{item.tmp}}</view>
+        <view class="td">{{item.cond_txt}}</view>
+        <view class="td">{{item.hum}}</view>
+        <view class="td">{{item.wind_dir}}</view>
+        <view class="td">{{item.wind_sc}}</view>
+      </view>
+    </view>
+    
+  </view>
+ 
+  <view class="containerforline">
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvasforline" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+  </view>
+  <view>
+  <canvas canvas-id="myCanvas" style="position:fixed;visibily:hidden;width: 600px; height: 900px;" />
+  </view>
+   
+</view>

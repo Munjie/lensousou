@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "多人脸检测",
+    "usingComponents": {
+        "Persona": "/component/persona/persona",
+        "Headpose": "/component/headpose/headpose",
+        "ImageBox": "/component/imageBox/imageBox",
+        "Upload": "/component/upload/upload",
+        "SwiperMin": "/component/swiperMin/swiperMin"
+    }
+}

@@ -1,0 +1,7 @@
+<view class="scroll_box">
+    <scroll-view scrollX class="scroll-view_x" style="width: auto;overflow:hidden;">
+        <view class="item_list {{item.active}}" wx:for="{{imageList}}" wx:key="unique">
+            <image bindtap="clickImage" class="image" data-id="{{index-0}}" data-name="{{item.name}}" src="{{item.image}}"></image>
+        </view>
+    </scroll-view>
+</view>

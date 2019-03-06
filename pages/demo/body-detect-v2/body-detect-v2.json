@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "多人体检测",
+    "usingComponents": {
+        "ImageBox": "/component/imageBox/imageBox",
+        "Upload": "/component/upload/upload",
+        "SwiperMin": "/component/swiperMin/swiperMin"
+    }
+}

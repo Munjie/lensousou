@@ -1,0 +1,26 @@
+<template name="footer">
+    <view class="footer-box">
+        <navigator class="feed-back" hoverClass="navigator_down" url="/pages/feedback/feedback?category={{category}}&&demo={{demo}}">
+            建议反馈 >
+        </navigator>
+        <block wx:if="{{status=='hidden'}}"></block>
+        <view class="demo-bottom" wx:else></view>
+    </view>
+</template>
+<template name="result">
+    <view class="demo-result-title">分析结果
+        <view bindtap="clipboard" class="copy-box" id="js-copy" wx:if="{{copy===true}}">
+            <image class="copy" src="/image/icon/copy.png"></image>
+                复制文本
+            </view>
+    </view>
+    <view class="demo-main-container" wx:if="{{invalid==true}}">
+        <view class="demo-result-content">
+            <view class="demo-result-invalid">
+                <text class="invalid_text">{{invalid_text}}</text>
+                <text class="invalid_text">{{invalid_more_text}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="demo-main-container" wx:elif="{{invalid==null}}"></view>
+</template>

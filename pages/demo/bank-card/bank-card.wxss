@@ -1,0 +1,123 @@
+page {
+    background: white;
+}
+
+.demo-result-title {
+    display: flex;
+    border-bottom: 1rpx solid #eeeeee;
+    height: 88rpx;
+    color: #4a4a4a;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    align-items: center;
+    padding-left: 40rpx;
+}
+
+.demo-main-container {
+    min-height: 400rpx;
+}
+
+.demo-result-content {
+    min-height: 400rpx;
+    align-items: center;
+    background: white;
+}
+
+.demo-result-invalid {
+    padding-top: 180rpx;
+    font-size: 32rpx;
+    color: #666;
+    text-align: center;
+}
+
+.demo-row {
+    line-height: 88rpx;
+    background-color: white;
+    border-bottom: 1rpx solid #eeeeee;
+    font-size: 28rpx;
+    color: #4a4a4a;
+    font-family: PingFangSC-Medium;
+    padding-left: 60rpx;
+}
+
+.demo-row-name {
+    color: #666666;
+    font-size: 28rpx;
+    box-sizing: border-box;
+    padding-right: 50rpx;
+    min-width: 220rpx;
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+}
+
+.demo-row-name-widely {
+    color: #666666;
+    font-size: 28rpx;
+    min-width: 220rpx;
+    font-family: PingFangSC-Regular;
+    display: inline-block;
+    letter-spacing: 2em;
+}
+
+.demo-row-text {
+    display: inline-block;
+    font-family: PingFangSC-Medium;
+    width: 420rpx;
+    line-height: 1.3;
+    padding-top: 20rpx;
+}
+
+.feed-back {
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 24rpx;
+    font-family: PingFangSC-Regular;
+    color: rgba(155,155,155,1);
+}
+
+.demo-bottom {
+    height: 164rpx;
+    background-color: #f3f4f7;
+}
+
+.demo-source-image {
+    height: 420rpx;
+    background-color: rgba(245,247,251,1);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy {
+    width: 28rpx;
+    height: 32rpx;
+    margin-right: 8rpx;
+}
+
+.copy-box {
+    float: right;
+    font-family: PingFangSC-Regular;
+    color: #9B9B9B;
+    font-size: 28rpx;
+    padding-left: 400rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invalid_text {
+    display: block;
+    font-size: 32rpx;
+    font-family: PingFangSC-Medium;
+    color: rgba(155,155,155,1);
+    line-height: 44rpx;
+}
+
+.footer-box {
+    z-index: 10000;
+}

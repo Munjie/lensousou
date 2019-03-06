@@ -1,0 +1,10 @@
+<view class="headpose">
+    <view class="box" style="transform: rotateX({{pitch}}deg) rotateY({{rolle}}deg) rotateZ({{yaw}}deg);top: {{top}}rpx;">
+        <view class="side front"></view>
+        <view class="side back"></view>
+        <view class="side left"></view>
+        <view class="side right"></view>
+        <view class="side top"></view>
+        <view class="side bottom"></view>
+    </view>
+</view>

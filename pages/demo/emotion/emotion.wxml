@@ -1,0 +1,15 @@
+<import src="../template.wxml"></import>
+<Persona bind:result="resultEvent" showRects="{{true}}" src="{{image_src}}"></Persona>
+<view class="demo-result-title">分析结果</view>
+<view class="demo-main-container">
+    <view class="demo-result-content">
+        <view class="demo-result-invalid" wx:if="{{invalid=='true'}}">未检测到人脸，请重新上传</view>
+        <block wx:elif="{{invalid=='false'}}">
+            <view class="text">{{emotion}}</view>
+            <view class="surely">{{surely}}</view>
+        </block>
+        <block wx:else></block>
+    </view>
+</view>
+<template is="footer" data="{{...feedback}}"></template>
+<Upload bind:upload="uploadEvent" text="上传图片"></Upload>

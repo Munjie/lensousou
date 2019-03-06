@@ -1,0 +1,23 @@
+<view class="swiper-upload-box {{theme}}">
+    <view class="left-box">
+        <button bindtap="choose" class="upload-button {{btnClass}} {{className}}" hoverClass="hover-button" size="default">
+            <image class="upload-image" mode="aspectFit" src="{{img}}" wx:if="{{img}}"></image>
+            <view class="{{msg_status}}">
+                <image class="upload-icon" src="{{upload_icon_img}}"></image>
+                <text class="msg">{{msg}}</text>
+            </view>
+            <view class="layer"></view>
+        </button>
+        <text class="sub-title upload-title">{{title}}</text>
+    </view>
+    <view class="right-box">
+        <view class="scroll_box">
+            <scroll-view scrollX bindscroll="scroll" class="scroll-view_x" scrollLeft="{{left}}" style="width: auto;overflow:hidden;">
+                <view class="item_list" id="{{item.image}}" wx:for="{{imageList}}" wx:key="unique">
+                    <image bindtap="clickImage" class="image {{item.active}}" data-id="{{index-0}}" data-image="{{item.image}}" src="{{item.image}}"></image>
+                    <text class="sub-title">{{item.text}}</text>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

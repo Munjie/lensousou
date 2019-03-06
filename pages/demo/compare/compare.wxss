@@ -1,0 +1,106 @@
+@import "../bank-card/bank-card.wxss";
+
+.compare-image-box {
+    background-color: #F3F4F7;
+    height: 510rpx;
+    padding: 0 24rpx;
+}
+
+.image-box {
+    margin-top: 30rpx;
+    width: 340rpx;
+    height: 480rpx;
+    float: left;
+    position: relative;
+}
+
+.image-container {
+    width: 340rpx;
+    height: 360rpx;
+    position: relative;
+    background-color: white;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box-right {
+    float: right;
+}
+
+.compare-btn {
+    width: 340rpx;
+    height: 72rpx;
+    background: rgba(255,255,255,1);
+    border-radius: 6rpx;
+    font-size: 28rpx;
+    font-family: PingFangSC-Regular;
+    color: #4A4A4A;
+    position: absolute;
+    bottom: 23rpx;
+}
+
+.btn-one {
+    left: 0;
+}
+
+.btn-two {
+    right: 0;
+}
+
+.compare-btn:after {
+    border-radius: 10rpx;
+    border: 2rpx solid rgba(218,218,218,1);
+}
+
+.demo-main-container {
+    min-height: 600rpx;
+}
+
+.demo-result-content {
+    text-align: center;
+    padding-top: 36rpx;
+    min-height: 600rpx;
+}
+
+.li {
+    font-size: 36rpx;
+    font-family: PingFangSC-Medium;
+    color: rgba(65,65,65,1);
+    padding-bottom: 40rpx;
+    padding-top: 24rpx;
+}
+
+.de {
+    font-size: 24rpx;
+    font-family: PingFangSC-Regular;
+    color: rgba(102,102,102,1);
+}
+
+.compare-feed-back {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #F7F7F7;
+    background-color: white;
+    z-index: 10000;
+}
+
+.circle {
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+}
+
+.progress_box {
+    margin: 0 auto;
+}
+
+.footer-box {
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}

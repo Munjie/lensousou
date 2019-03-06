@@ -1,0 +1,39 @@
+.scroll_box {
+    width: 93%;
+    height: 160rpx;
+    border-bottom: 2rpx solid rgba(238,238,238,1);
+    overflow: hidden;
+    padding: 20rpx;
+    background: #fff;
+    white-space: nowrap;
+}
+
+.scroll-view_x {
+    height: 100%;
+}
+
+.item_list {
+    width: 152rpx;
+    height: 152rpx;
+    margin-right: 23rpx;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image {
+    width: 152rpx;
+    height: 152rpx;
+}
+
+.true {
+    border: 4rpx solid rgba(82,255,225,1);
+}
+
+.false {
+    border: 4rpx solid white;
+}
+
+.opa {
+    opacity: 0.5;
+}

@@ -1,0 +1,378 @@
+/**weather.wxss**/
+
+
+.w {
+  color: white;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.c {
+  margin-top: -100rpx;
+}
+
+.txt {
+  margin-left: 450rpx;
+  margin-top: -90rpx;
+  color: white;
+}
+
+.time {
+  display: flex;
+  color: white;
+  margin-left: 535rpx;
+  margin-top: -80rpx;
+  font-size: 20rpx;
+  width: 230rpx;
+  position: static;
+}
+
+.l {
+  border: 1rpx solid #fff;
+}
+
+.center {
+  text-align: center;
+  margin: auto 0;
+}
+
+.hor {
+  display: flex;
+}
+
+.f50 {
+  font-size: 50rpx;
+}
+
+/**index css**/
+
+.bg {
+  width: 100%;
+  height: 1060rpx;
+}
+
+.temp {
+  font-size: 160rpx;
+  margin-top: -50rpx;
+  color: white;
+  text-align: center;
+}
+
+.tmpmax {
+  font-size: 28rpx;
+  margin-top: -1%;
+  color: white;
+  margin-left: 69%;
+}
+
+.container {
+  position: fixed;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  padding: 0rpx;
+  margin: 0rpx;
+  height: 100%;
+  display: flex;
+  right: 0rpx;
+}
+
+.nowWeather {
+  padding: 50rpx;
+}
+
+.weahterDetail {
+  width: 100%;
+  display: block;
+  flex-direction:  row;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 100rpx;
+}
+
+.forcast {
+  padding: 30rpx;
+  margin-left: 16rpx;
+  margin-right: 16rpx;
+  border-bottom: 1rpx solid #eee;
+  justify-content: space-around;
+}
+
+.img {
+  width: 120rpx;
+  height: 120rpx;
+  margin-left: 500rpx;
+}
+
+.disdiv {
+  text-align: left;
+}
+
+.shidu {
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+  margin-top: 450rpx;
+}
+
+.shidutxt {
+  float: left;
+  margin-top: 450rpx;
+  color: white;
+  font-size: 30rpx;
+}
+
+.qiya {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: -100rpx;
+  margin-top: 505rpx;
+}
+
+.qiyatxt {
+  margin-left: -10rpx;
+  margin-top: 505rpx;
+  color: white;
+  font-size: 30rpx;
+}
+
+.feng {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: -18%;
+  margin-top: 555rpx;
+}
+
+.fengtxt {
+  margin-left: -10rpx;
+  margin-top: 555rpx;
+  color: white;
+  font-size: 30rpx;
+}
+
+.home_address {
+  margin-left: -30rpx;
+  padding: 10rpx;
+}
+
+.home_address view {
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  white-space: nowrap;
+}
+
+.home_address view text {
+  color: white;
+  font-size: 14px;
+  padding-right: 40rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  white-space: nowrap;
+  border-radius: 30rpx;
+  background-color: #4e4e6b;
+}
+
+.home_address image {
+  width: 14rpx;
+  height: 9rpx;
+  padding: 8rpx;
+  margin-left: -40rpx;
+}
+
+/*底部view样式*/
+
+.bottomView {
+  margin-top: -200rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottomItemView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200rpx;
+}
+
+/*最近七天样式*/
+
+.bottomImage {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.bottomText {
+  font-size: 28rpx;
+  color: white;
+}
+
+.swiper-tab {
+  height: 30px;
+  line-height: 30px;
+  background: #1b82d1;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  position: relative;
+  z-index: 2;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-tab-list {
+  margin: 0 20px;
+  padding: 0 4px;
+  font-size: 28rpx;
+}
+
+.on {
+  border-bottom: 2px solid #fff;
+  color: white;
+}
+
+.title {
+  padding: 10rpx 0 10rpx 20rpx;
+  background-color: white;
+}
+
+.title text {
+  border-left: 2px solid white;
+  padding-left: 20rpx;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+swiper-item scroll-view {
+  height: 100%;
+  width: 100%;
+}
+
+scroll-view .canvas {
+  width: 100%;
+  height: 100%;
+  margin-top: 20rpx;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.hot-box {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 700rpx;
+  color: white;
+}
+
+.btn {
+  display: block;
+  height: 30rpx;
+  width: 90rpx;
+  font-size: 10rpx;
+  font-style: initial;
+  margin-top: 500rpx;
+  margin-right: 0rpx;
+  padding: 0rpx;
+  background: #1c292bd8;
+  opacity: 0.5;
+}
+
+.btn::after {
+  border: 0;
+}
+
+.rinBtn {
+  display: flex;
+  height: 30rpx;
+  width: 90rpx;
+  font-size: 10rpx;
+  font-style: initial;
+  margin-top: 530rpx;
+  padding: 0rpx;
+  background: #1c292bd8;
+  opacity: 0.5;
+  margin-left: -90rpx;
+}
+
+.hot-box2 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 600rpx;
+  color: white;
+}
+
+.swiper_container {
+  height: 40rpx;
+  width: 200rpx;
+  text-align: center;
+}
+
+.swiper_item {
+  font-size: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: '微软雅黑';
+  color: white;
+}
+
+.info {
+  margin-left: -450rpx;
+  margin-top: 400rpx;
+}
+
+.crepicture {
+  display: flex;
+  margin-left: -650rpx;
+  margin-top: 200rpx;
+  position: absolute;
+}
+
+.crepicture_img {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.air{
+
+  display: flex;
+ margin-top: 400rpx;
+ margin-left: -550rpx;
+  position: absolute;
+}
+
+
+.airtext{
+
+ color: white;
+ font-family: '微软雅黑';
+ font-size: 60;
+ 
+}
+
+.airimg{
+  display: flex;
+margin-top: 500rpx;
+  position: absolute;
+  height: 20rpx;
+  width: 20rpx;
+ 
+}

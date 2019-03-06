@@ -1,0 +1,14 @@
+<import src="../template.wxml"></import>
+<ImageBox bind:imageBox="imageBox" rects="{{rects}}" src="{{imageSrc}}"></ImageBox>
+<SwiperMin bind:changeSwiper="changeSwiper" imageSrc="{{imageSrc}}" list="{{list}}" wx:if="{{list&&list.length>0}}"></SwiperMin>
+<template is="result" data="{{...str}}"></template>
+<view class="demo-main-container" wx:if="{{str.invalid===false}}">
+    <view class="demo-result-content">
+        <view class="demo-row" wx:for="{{items}}" wx:key="unique">
+            <view class="demo-row-name">{{item[0]}}</view>
+                    {{humanbody[ item[1] ]}}
+                </view>
+    </view>
+</view>
+<template is="footer" data="{{...feedback}}"></template>
+<Upload bind:upload="choose" text="上传照片"></Upload>

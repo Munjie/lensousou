@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "肤质评估",
+    "usingComponents": {
+        "ImageBox": "/component/imageBox/imageBox",
+        "Upload": "/component/upload/upload",
+        "circle": "/component/circle/circle",
+        "progress": "/component/progress/progress"
+    }
+}

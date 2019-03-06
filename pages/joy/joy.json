@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "娱乐",
+  "usingComponents": {
+    "circle": "/component/circle/circle",
+    "Persona": "/component/persona/persona",
+    "Upload": "/component/upload/upload"
+  }
+}

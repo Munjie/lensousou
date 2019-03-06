@@ -1,0 +1,42 @@
+<import src="../template.wxml"></import>
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">选项一的内容</view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <Persona bind:result="resultEvent" showRects="{{true}}" src="{{image_src}}"></Persona>
+          <template is="result" data="{{...str}}"></template>
+          <view class="demo-main-container" wx:if="{{str.invalid===false}}">
+            <view class="beauty-result-container">
+              <circle class="circle" id="circle"></circle>
+              <view class="title">你的颜值</view>
+              <view class="weui-result_detail_container">
+                <view class="weui-result_detail" wx:if="{{percent >= 80}}">
+                  哇噢，你的颜值爆表啦
+                </view>
+                <view class="weui-result_detail">
+                  在男性看来你的颜值超过了{{male_score}}%的人
+                </view>
+                <view class="weui-result_detail">
+                  在女性看来你的颜值超过了{{female_score}}%的人
+                </view>
+              </view>
+            </view>
+          </view>
+          <!-- <template is="footer" data="{{...feedback}}"></template> -->
+          <Upload bind:upload="choose" text="上传图片"></Upload>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+      </view>
+    </view>
+  </view>
+</view>

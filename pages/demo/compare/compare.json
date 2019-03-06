@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "人脸比对",
+    "usingComponents": {
+        "circle": "/component/circle/circle",
+        "Persona": "/component/persona/persona",
+        "Headpose": "/component/headpose/headpose",
+        "Upload": "/component/upload/upload"
+    }
+}

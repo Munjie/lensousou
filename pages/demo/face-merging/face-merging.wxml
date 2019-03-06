@@ -1,0 +1,29 @@
+<import src="../template.wxml"></import>
+<ImageBox imageError="{{imageError}}" src="{{result_url}}"></ImageBox>
+<view class="merge-swiper-container">
+    <SwiperLoad bind:changeSwiper="changeTopSwiper" bind:upload="uploadTopImage" btnClass="upload-merge" className="{{merge_class}}" img="{{merge_img}}" left="{{merge_left}}" list="{{list1}}" msg="{{merge_msg}}" msg_status="{{merge_msg_status}}" target="{{merge_target}}" theme="blue" title="融合图" toView="{{merge_url}}"></SwiperLoad>
+    <SwiperLoad bind:changeSwiper="changeBottomSwiper" bind:upload="uploadBottomImage" btnClass="upload-template" className="{{template_class}}" img="{{template_img}}" left="{{template_left}}" list="{{list2}}" msg="{{template_msg}}" msg_status="{{template_msg_status}}" target="{{template_target}}" theme="green" title="模板图" toView="{{template_url}}"></SwiperLoad>
+</view>
+<template is="footer" data="{{...feedback}}"></template>
+<view class="share-container {{status}} {{min}}">
+    <view class="image-box">
+        <image class="share-img" src="/image/merging/share.png"></image>
+        <view class="merge-box result-image-box">
+            <image mode="aspectFit" src="{{merge_url}}"></image>
+        </view>
+        <view class="template-box result-image-box">
+            <image mode="aspectFit" src="{{template_url}}"></image>
+        </view>
+        <view class="result-box result-image-box" wx:if="{{result_url}}">
+            <image mode="aspectFit" src="{{result_url}}"></image>
+        </view>
+    </view>
+    <view class="share-box">
+        <button bindtap="hidden" class="btn">
+            再试一次
+        </button>
+        <button bindtap="save" class="btn">
+            保存图片
+        </button>
+    </view>
+</view>

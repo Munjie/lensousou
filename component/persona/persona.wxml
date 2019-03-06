@@ -1,0 +1,5 @@
+<view class="image-bg" id="the-id">
+    <image binderror="imageError" bindload="imageLoad" bindtap="previewImage" src="{{imageSrc}}" style="width:{{imgwidth}}rpx; height:{{imgheight}}rpx;"></image>
+    <view class="mark" style="left: {{ptr.x}}px; top: {{ptr.y}}px" wx:for="{{landmarks}}" wx:for-index="idx" wx:for-item="ptr" wx:key="{{idx}}"></view>
+    <view class="rect" style="left: {{r.x}}px; top: {{r.y}}px; width: {{r.width}}px; height: {{r.height}}px; transform: rotateZ({{r.rotateZ}}deg)" wx:for="{{rects}}" wx:for-index="idx" wx:for-item="r" wx:key="{{idx}}"></view>
+</view>

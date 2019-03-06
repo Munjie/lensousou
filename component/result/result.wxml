@@ -1,0 +1,9 @@
+<view class="demo-result-title">分析结果</view>
+<view class="demo-main-container">
+    <view class="demo-result-content">
+        <view class="demo-result-invalid" wx:if="{{invalid=='true'}}">未检测</view>
+        <block wx:elif="{{invalid=='false'}}"></block>
+        <block wx:else></block>
+    </view>
+</view>
+<view class="demo-bottom"></view>

@@ -1,0 +1,153 @@
+.swiper-upload-box {
+    overflow: hidden;
+    white-space: nowrap;
+    height: 224rpx;
+}
+
+.left-box {
+    float: left;
+    width: 180rpx;
+    height: 220rpx;
+}
+
+.right-box {
+    display: inline-block;
+    float: left;
+    width: 570rpx;
+}
+
+.scroll_box {
+    width: 93%;
+    overflow: hidden;
+    padding: 20rpx;
+    padding-bottom: 0;
+    background: #fff;
+    white-space: nowrap;
+}
+
+.scroll-view_x {
+    height: 100%;
+}
+
+.item_list {
+    width: 168rpx;
+    margin-right: 23rpx;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image {
+    width: 160rpx;
+    height: 160rpx;
+    display: block;
+    box-sizing: border-box;
+}
+
+.true {
+    border: 4rpx solid rgba(82,255,225,1);
+}
+
+.blue .true {
+    border: 4rpx solid rgba(69,141,255,1);
+}
+
+.error {
+    border: 4rpx solid #FF5050;
+}
+
+.opa {
+    opacity: 0.5;
+}
+
+.sub-title {
+    font-size: 24rpx;
+    font-family: PingFangSC-Medium;
+    color: #9B9B9B;
+    text-align: center;
+    display: block;
+    padding: 12rpx 0;
+    line-height: 34rpx;
+    width: 100%;
+}
+
+.upload-title {
+    width: 160rpx;
+    margin-left: 20rpx;
+}
+
+.button-box {
+    float: left;
+    width: 180rpx;
+    height: 220rpx;
+}
+
+.upload-button {
+    width: 160rpx;
+    height: 160rpx;
+    background: rgba(238,238,238,1);
+    margin: 20rpx 0 0rpx 20rpx;
+    border-radius: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.upload-button:after {
+    border: none;
+}
+
+.upload-icon {
+    width: 44rpx;
+    height: 44rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -22rpx;
+    margin-left: -22rpx;
+    z-index: 10;
+}
+
+.upload-image {
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.active {
+    border: 4rpx solid rgba(82,255,225,1);
+}
+
+.blue .active {
+    border: 4rpx solid rgba(69,141,255,1);
+}
+
+.error {
+    border: 4rpx solid #FF5050;
+}
+
+.active .layer,.error .layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.msg {
+    position: absolute;
+    line-height: 1;
+    color: white;
+    font-size: 20rpx;
+    font-family: PingFangSC-Medium;
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 23rpx;
+    z-index: 1000;
+}
+
+.dark .msg {
+    color: #4A4A4A;
+}

@@ -1,0 +1,3 @@
+<view>
+    <button bindtap="choose" class="button" hoverClass="hover-button" size="default">{{text}}</button>
+</view>

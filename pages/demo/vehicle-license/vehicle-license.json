@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "行驶证识别",
+    "usingComponents": {
+        "ImageBox": "/component/imageBox/imageBox",
+        "Upload": "/component/upload/upload"
+    }
+}

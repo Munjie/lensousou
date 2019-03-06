@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/index/index",
+    "pages/wether/wether",
+    "pages/air/air",
+    "pages/board/board",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/item/item",
+    "pages/sevenday/sevenday",
+    "pages/about/about",
+    "pages/switchcity/switchcity",
+    "pages/demo/face-merging/face-merging",
+    "pages/demo/compare/compare",
+    "pages/demo/gesture/gesture",
+    "pages/demo/car/car",
+    "pages/demo/skinstatus/skinstatus",
+    "pages/demo/body-detect/body-detect",
+    "pages/demo/id-card/id-card",
+    "pages/demo/bank-card/bank-card",
+    "pages/demo/driver-license/driver-license",
+    "pages/demo/vehicle-license/vehicle-license",
+    "pages/demo/body-detect-v2/body-detect-v2",
+    "pages/demo/beauty/beauty",
+    "pages/demo/detect/detect",
+    "pages/demo/emotion/emotion",
+    "pages/demo/detect-v2/detect-v2",
+    "pages/demo/general-text/general-text"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#515151",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "text": "天气",
+        "iconPath": "images/toolbar/weather.png",
+        "selectedIconPath": "images/toolbar/weatherxz.png"
+      },
+      {
+        "pagePath": "pages/demo/beauty/beauty",
+        "text": "美颜",
+        "iconPath": "images/toolbar/buty.png",
+        "selectedIconPath": "images/toolbar/butys.png"
+      },
+      {
+        "pagePath": "pages/board/board",
+        "text": "电影",
+        "iconPath": "images/toolbar/move.png",
+        "selectedIconPath": "images/toolbar/moves.png"
+      },
+      
+      {
+        "pagePath": "pages/about/about",
+        "selectedIconPath": "images/toolbar/aboutxz.png",
+        "iconPath": "images/toolbar/about.png",
+        "text": "关于"
+      }
+    ]
+  }
+}

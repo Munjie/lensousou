@@ -1,0 +1,40 @@
+<import src="../template.wxml"></import>
+<ImageBox bind:imageBox="imageBox" rects="{{rects}}" src="{{imageSrc}}"></ImageBox>
+<SwiperMin bind:changeSwiper="changeSwiper" imageSrc="{{imageSrc}}" list="{{list}}" wx:if="{{list&&list.length>0}}"></SwiperMin>
+<template is="result" data="{{...str}}"></template>
+<view class="demo-main-container" wx:if="{{str.invalid===false}}">
+    <view class="demo-result-content">
+        <view class="demo-row">
+            <view class="demo-row-name-widely">年龄</view>
+                {{age}}
+            </view>
+        <view class="demo-row">
+            <view class="demo-row-name-widely">性别</view>
+                {{gender}}
+            </view>
+        <view class="demo-row">
+            <view class="demo-row-name-widely">情绪</view>
+                {{emotion}}
+            </view>
+        <view class="demo-row">
+            <view class="demo-row-name">头部姿态</view>
+            <view class="headpose" wx:if="{{headpose}}">
+                <Headpose angle="{{headpose}}"></Headpose>
+            </view>
+        </view>
+        <view class="demo-row">
+            <view class="demo-row-name">嘴部状态</view>
+                {{mouth}}
+            </view>
+        <view class="demo-row">
+            <view class="demo-row-name">左眼状态</view>
+                {{leftEye}}
+            </view>
+        <view class="demo-row">
+            <view class="demo-row-name">右眼状态</view>
+                {{rightEye}}
+            </view>
+    </view>
+</view>
+<template is="footer" data="{{...feedback}}"></template>
+<Upload bind:upload="choose" text="上传照片"></Upload>

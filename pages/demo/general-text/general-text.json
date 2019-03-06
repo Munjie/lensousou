@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "通用文字识别",
+    "usingComponents": {
+        "Persona": "/component/persona/persona",
+        "Upload": "/component/upload/upload"
+    }
+}

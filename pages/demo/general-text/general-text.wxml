@@ -1,0 +1,10 @@
+<import src="../template.wxml"></import>
+<template is="result" data="{{...str}}"></template>
+<view class="demo-main-container" wx:if="{{str.invalid===false}}">
+    <view class="demo-row" wx:for="{{card}}" wx:key="unique">
+        <view class="demo-row-name">{{item['name']}}</view>
+                {{item['value']}}
+            </view>
+</view>
+<template is="footer" data></template>
+<Upload bind:upload="choose" text="上传通用文字照片"></Upload>

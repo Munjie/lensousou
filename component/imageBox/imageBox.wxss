@@ -1,0 +1,45 @@
+.image-box {
+    height: 560rpx;
+    background-color: rgba(245,247,251,1);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.image-min-box {
+    position: relative;
+}
+
+.rect {
+    border: 4rpx solid #50FAFF;
+    position: absolute;
+}
+
+.true {
+    border: 4rpx solid #50FAFF;
+    position: absolute;
+}
+
+.false {
+    border: 4rpx solid white;
+    position: absolute;
+}
+
+.error_msg {
+    width: 100%;
+    text-align: center;
+    font-size: 32rpx;
+    font-family: PingFangSC-Medium;
+    color: rgba(155,155,155,1);
+    line-height: 44rpx;
+}

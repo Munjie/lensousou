@@ -1,0 +1,16 @@
+<import src="../template.wxml"></import>
+<ImageBox src="{{imageSrc}}"></ImageBox>
+<template is="result" data="{{...str}}"></template>
+<view class="demo-main-container" wx:if="{{str.invalid===false}}">
+    <view class="demo-row" wx:for="{{items}}" wx:key="property">
+        <view class="demo-row-name" wx:if="{{item[0].length>2}}">
+                    {{item[0]}}
+                </view>
+        <view class="demo-row-name-widely" wx:else>
+                    {{item[0]}}
+                </view>
+        <view class="demo-row-text"> {{card[ item[1] ]}}</view>
+    </view>
+</view>
+<template is="footer" data="{{...feedback}}"></template>
+<Upload bind:upload="choose" text="上传车牌照片"></Upload>

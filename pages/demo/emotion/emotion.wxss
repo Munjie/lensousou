@@ -1,0 +1,23 @@
+@import "../bank-card/bank-card.wxss";
+
+.text {
+    padding-top: 200rpx;
+    font-size: 64rpx;
+    color: #008DDE;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.surely {
+    font-size: 28rpx;
+    color: #666;
+    text-align: center;
+}
+
+.invalid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 534rpx;
+}

@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "人脸分析",
+    "usingComponents": {
+        "Persona": "/component/persona/persona",
+        "Headpose": "/component/headpose/headpose",
+        "Upload": "/component/upload/upload"
+    }
+}

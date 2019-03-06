@@ -1,0 +1,9 @@
+<view class="progress_box" style="width:{{width}}; height: {{height}}">
+    <canvas canvasId="canvasProgressbg" class="progress_bg" style="width:{{width}}; height: {{height}}"></canvas>
+    <canvas canvasId="canvasProgress" class="progress_canvas" style="width:{{width}}; height: {{height}}"></canvas>
+    <view class="progress_text">
+        <text class="progress_info"> {{percent}}</text>
+        <text class="progress_unit"> {{unit}}</text>
+    </view>
+    <slot></slot>
+</view>

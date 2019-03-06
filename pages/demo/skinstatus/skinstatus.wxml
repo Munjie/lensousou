@@ -1,0 +1,16 @@
+<import src="../template.wxml"></import>
+<ImageBox bind:imageBox="imageBox" rects="{{rects}}" src="{{imageSrc}}"></ImageBox>
+<template is="result" data="{{...str}}"></template>
+<view class="demo-main-container" wx:if="{{str.invalid===false}}">
+    <view class="demo-result-content">
+        <circle class="circle" id="circle">
+            <Upload bind:upload="choose" text="上传图片"></Upload>
+        </circle>
+        <view class="title">综合健康指数</view>
+        <view class="skin-result-box">
+            <progress image="{{item.image}}" name="{{item.name}}" percent="{{item.percent}}" wx:for="{{set}}" wx:key="unique"></progress>
+        </view>
+    </view>
+</view>
+<template is="footer" data="{{...feedback}}"></template>
+<Upload bind:upload="choose" text="上传照片"></Upload>

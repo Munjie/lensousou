@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "手势识别",
+    "usingComponents": {
+        "ImageBox": "/component/imageBox/imageBox",
+        "SwiperImg": "/component/swiperImg/swiperImg",
+        "Persona": "/component/persona/persona",
+        "Upload": "/component/upload/upload"
+    }
+}

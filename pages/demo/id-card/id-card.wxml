@@ -1,0 +1,57 @@
+<import src="../template.wxml"></import>
+<view class="id-card-page">
+    <view class="swiper-tab">
+        <view bindtap="tab_click" class="bre swiper-tab-list {{tab==0?'on':''}}" data-current="0">人像面</view>
+        <view bindtap="tab_click" class="swiper-tab-list {{tab==1?'on':''}}" data-current="1">国徽面</view>
+    </view>
+    <swiper bindchange="tab_slide" class="swiper-box" current="{{tab}}" duration="300">
+        <swiper-item>
+            <view class="swiper-item-box">
+                <ImageBox src="{{frontSrc}}"></ImageBox>
+                <view class="demo-result-title">分析结果
+                    <view bindtap="clipboard" class="copy-box" id="js-copy" wx:if="{{frontInvalid===false}}">
+                        <image class="copy" src="/image/icon/copy.png"></image>
+                            复制文本
+                        </view>
+                </view>
+                <view class="demo-main-container">
+                    <view class="demo-result-content">
+                        <view class="demo-result-invalid" wx:if="{{frontInvalid===true}}">未检测到身份证人像面，请重新上传</view>
+                        <block wx:elif="{{frontInvalid===false}}">
+                            <view class="demo-row" wx:for="{{front_items}}" wx:key="property">
+                                <view class="demo-row-name">{{item[0]}}</view>
+                                <view class="demo-row-text">
+                                        {{front_card[ item[1] ]}}
+                                    </view>
+                            </view>
+                        </block>
+                    </view>
+                </view>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <ImageBox src="{{backSrc}}"></ImageBox>
+            <view class="demo-result-title">分析结果
+                <view bindtap="clipboard" class="copy-box" id="js-copy" wx:if="{{backInvalid===false}}">
+                    <image class="copy" src="/image/icon/copy.png"></image>
+                        复制文本
+                    </view>
+            </view>
+            <view class="demo-main-container">
+                <view class="demo-result-content">
+                    <view class="demo-result-invalid" wx:if="{{backInvalid===true}}">未检测到身份证国徽面，请重新上传</view>
+                    <block wx:elif="{{backInvalid===false}}">
+                        <view class="demo-row" wx:for="{{back_items}}" wx:key="property">
+                            <view class="demo-row-name">{{item[0]}}</view>
+                            <view class="demo-row-text">
+                                    {{back_card[ item[1] ]}}
+                                </view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>
+<template is="footer" data="{{...feedback}}"></template>
+<Upload bind:upload="choose" text="{{btn_txt}}"></Upload>

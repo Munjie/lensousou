@@ -1,0 +1,23 @@
+<view class="little-box">
+    <view class="left">
+        <image class="note-image" src="{{image}}"></image>
+        <view class="little-title">{{name}}</view>
+    </view>
+    <view class="progress right">
+        <vew class="progress_part-box">
+            <view class="mild progress_part"></view>
+            <view class="part_title">轻度</view>
+        </vew>
+        <vew class="progress_part-box">
+            <view class="moderate progress_part"></view>
+            <view class="part_title">中度</view>
+        </vew>
+        <vew class="progress_part-box">
+            <view class="severe progress_part"></view>
+            <view class="part_title">重度</view>
+        </vew>
+        <view class="pointer" style="left:{{percent-2}}%;">
+            <image class="pointer-image" src="/image/skinstatus/pointer.png"></image>
+        </view>
+    </view>
+</view>

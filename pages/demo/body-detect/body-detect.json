@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "人体分析",
+    "usingComponents": {
+        "ImageBox": "/component/imageBox/imageBox",
+        "Upload": "/component/upload/upload"
+    }
+}

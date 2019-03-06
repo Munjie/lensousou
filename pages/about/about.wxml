@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="page__hd">
+  </view>
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">关于小程序</view>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title weui-media-box__title_in-text">当前版本</view>
+          <view class="weui-media-box__desc">3.1.0</view>
+        </view>
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title weui-media-box__title_in-text">功能简介</view>
+          <view class="weui-media-box__desc">这是一款功能简单集成颜值测试和豆瓣电影的天气小程序。</view>
+        </view>
+          <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title weui-media-box__title_in-text">关于作者</view>
+          <view class="weui-media-box__desc">Hello，小母同学</view>
+        </view>
+         <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title weui-media-box__title_in-text">更新日志</view>
+          <view class="weui-media-box__desc">1.新增豆瓣电影功能2.界面优化调整</view>  
+        </view>
+      </view>
+    </view>
+  </view>     
+        <button class="weui-btn"  open-type="feedback" >意见反馈</button>     
+</view>

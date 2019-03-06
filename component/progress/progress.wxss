@@ -1,0 +1,71 @@
+.left {
+    display: inline-block;
+    padding: 16px 20px;
+}
+
+.right {
+    display: inline-block;
+    position: relative;
+}
+
+.little-title {
+    font-size: 24rpx;
+    font-family: PingFangSC-Regular;
+    color: #4A4A4A;
+    text-align: center;
+}
+
+.little-box {
+    border-bottom: 1px solid rgba(238,238,238,1);
+    width: 100%;
+}
+
+.note-image {
+    width: 64rpx;
+    height: 64rpx;
+}
+
+.progress_part-box {
+    float: left;
+    position: relative;
+}
+
+.progress_part {
+    width: 188rpx;
+    height: 20rpx;
+    float: left;
+}
+
+.part_title {
+    font-size: 24rpx;
+    font-family: PingFangSC-Regular;
+    color: #9B9B9B;
+    text-align: center;
+    line-height: 54rpx;
+}
+
+.mild {
+    background: #FEEFD8;
+    border-bottom-left-radius: 10rpx;
+    border-top-left-radius: 10rpx;
+}
+
+.moderate {
+    background: #FFCFAB;
+}
+
+.severe {
+    background: #F5926A;
+    border-bottom-right-radius: 10rpx;
+    border-top-right-radius: 10rpx;
+}
+
+.pointer {
+    position: absolute;
+    bottom: 29rpx;
+}
+
+.pointer-image {
+    width: 8px;
+    height: 27px;
+}

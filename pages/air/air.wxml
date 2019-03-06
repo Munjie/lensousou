@@ -1,0 +1,12 @@
+<image class="bg" mode="aspectFill" src="../../images/beach.jpg"></image>  
+<view class='container'>
+
+    <view class="hot-box" >
+      <canvas class="canvas" canvas-id="barGraph"></canvas>
+    </view>
+
+     <view class="hot-box2" >
+      <canvas class="canvas" canvas-id="pieGraph"></canvas>
+    </view>
+ 
+</view>

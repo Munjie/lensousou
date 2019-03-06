@@ -1,0 +1,28 @@
+<import src="../template.wxml"></import>
+<view class="compare-image-box">
+    <view class="image-box image-box-left">
+        <view class="image-container">
+            <image bindload="imageLoad" bindtap="previewImage" data-id="1" data-image="{{image_url1}}" src="{{image_url1}}" style="width:{{img1width}}rpx; height:{{img1height}}rpx;"></image>
+        </view>
+        <button bindtap="choose" class="compare-btn btn-one" data-id="1">上传图片一</button>
+    </view>
+    <view class="image-box image-box-right">
+        <view class="image-container">
+            <image bindload="imageLoad" bindtap="previewImage" data-id="2" data-image="{{image_url2}}" src="{{image_url2}}" style="width:{{img2width}}rpx; height:{{img2height}}rpx;"></image>
+        </view>
+        <button bindtap="choose" class="compare-btn btn-two" data-id="2">上传图片二</button>
+    </view>
+</view>
+<template is="result" data="{{...str}}"></template>
+<view class="demo-main-container" wx:if="{{str.invalid==false}}">
+    <view class="demo-result-content">
+        <circle class="circle" id="circle" unit="%"></circle>
+        <view class="li">相似度</view>
+        <view class="de">{{text}}</view>
+    </view>
+</view>
+<div class="footer-box">
+    <navigator class="feed-back compare-feed-back" hoverClass="navigator_down" url="/pages/feedback/feedback?category={{feedback.category}}&&demo={{feedback.demo}}">
+        建议反馈 >
+    </navigator>
+</div>
